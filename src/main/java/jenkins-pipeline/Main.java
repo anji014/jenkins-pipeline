@@ -1,18 +1,15 @@
 package jenkins-pipeline;
 
-import java.util.Scanner;  // Import the Scanner class
-
 public class Main {
+
   public static void main(String[] args) {
-    int x, y, sum;
-    Scanner myObj = new Scanner(System.in);  // Create a Scanner object
-    System.out.println("Type a number:");
-    x = myObj.nextInt(); // Read user input
+    int rows = 5;
 
-    System.out.println("Type another number:");
-    y = myObj.nextInt(); // Read user input
-
-    sum = x + y;
-    System.out.println("Sum is: " + sum); // Output user input
+    for (int i = 1; i <= rows; ++i) {
+      for (int j = 1; j <= i; ++j) {
+        System.out.print("* ");
+      }
+      System.out.println();
+    }
   }
-} 
+}
